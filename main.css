@@ -1,0 +1,68 @@
+:root {
+    --green: #00ff00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnbg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnbg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: monospace;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnbg);
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:focus {
+    outline-style: none;
+}
+
+.btn:hover {
+    background-color: #888;
+}
